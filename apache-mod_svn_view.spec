@@ -31,7 +31,6 @@ BuildRequires:	libxml2-devel >= 2.6.11
 BuildRequires:	libxslt-devel >= 1.1.5
 BuildRequires:	file
 BuildRequires:	python
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 mod_svn_view provides a web-based view of a Subversion repository, similar to
