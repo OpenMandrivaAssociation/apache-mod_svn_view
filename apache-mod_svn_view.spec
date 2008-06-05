@@ -86,7 +86,7 @@ export CXXFLAGS="`%{_sbindir}/apxs -q CFLAGS` `$APR --cflags --includes`"
 sh ./autogen.sh
 autoconf
 
-%configure2_5x
+%configure2_5x --localstatedir=/var/lib
 
 %make
 
