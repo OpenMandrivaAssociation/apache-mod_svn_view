@@ -3,18 +3,18 @@
 %define mod_conf A59_%{mod_name}.conf
 %define mod_so %{mod_name}.so
 
-%define snap r147
+%define snap r148
 
 Summary:	Mod_svn_view provides a web-based view of a Subversion repository
 Name:		apache-%{mod_name}
 Version:	0.1.0
-Release:	%mkrel 1.%{snap}.9
+Release:	%mkrel 1.%{snap}.1
 Group:		System/Servers
 License:	GPL
 URL:		http://www.outoforder.cc/projects/apache/mod_svn_view/
 Source0:	%{mod_name}-%{version}-%{snap}.tar.bz2
 Source1:	%{mod_conf}.bz2
-Patch0:		mod_svn_view-autofoofix.diff
+Patch0:		mod_svn_view-svn16x_fix.diff
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
 Requires(pre):	apache-conf >= 2.0.54
@@ -44,7 +44,7 @@ mod_transform to generate a customized look.
 %prep
 
 %setup -q -n %{mod_name}
-#%patch0 -p0
+%patch0 -p0
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type d -perm 0555 -exec chmod 755 {} \;
