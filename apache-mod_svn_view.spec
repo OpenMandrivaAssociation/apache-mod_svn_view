@@ -44,7 +44,7 @@ mod_transform to generate a customized look.
 %prep
 
 %setup -q -n %{mod_name}
-%patch0 -p0
+%patch0 -p1
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type d -perm 0555 -exec chmod 755 {} \;
