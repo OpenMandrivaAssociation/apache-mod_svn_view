@@ -8,7 +8,7 @@
 Summary:	Mod_svn_view provides a web-based view of a Subversion repository
 Name:		apache-%{mod_name}
 Version:	0.1.0
-Release:	%mkrel 1.%{snap}.3
+Release:	%mkrel 1.%{snap}.4
 Group:		System/Servers
 License:	GPL
 URL:		http://www.outoforder.cc/projects/apache/mod_svn_view/
