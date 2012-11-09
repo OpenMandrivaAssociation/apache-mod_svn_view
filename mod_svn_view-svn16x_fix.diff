@@ -1,0 +1,23 @@
+diff -Naurp mod_svn_view/src/mod_svn_view.c mod_svn_view.oden/src/mod_svn_view.c
+--- mod_svn_view/src/mod_svn_view.c	2006-04-05 13:55:17.000000000 +0200
++++ mod_svn_view.oden/src/mod_svn_view.c	2009-08-01 19:57:40.000000000 +0200
+@@ -70,7 +70,7 @@
+ #include "svn_path.h"
+ #include "svn_utf.h"
+ #include "svn_time.h"
+-
++#include "svn_props.h"
+ #include "mod_svn_view_private.h"
+ 
+ #define SVN_VIEW_VERSION VERSION
+diff -Naurp mod_svn_view/src/view_rss.c mod_svn_view.oden/src/view_rss.c
+--- mod_svn_view/src/view_rss.c	2006-04-05 13:55:17.000000000 +0200
++++ mod_svn_view.oden/src/view_rss.c	2009-08-01 19:57:35.000000000 +0200
+@@ -30,6 +30,7 @@
+ #include "svn_path.h"
+ #include "svn_utf.h"
+ #include "svn_time.h"
++#include "svn_props.h"
+ #include "mod_svn_view_private.h"
+ 
+ #define SV_RSS_MAX_CHANGES 100
