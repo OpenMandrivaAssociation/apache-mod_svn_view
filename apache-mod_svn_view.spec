@@ -8,7 +8,7 @@
 Summary:	Mod_svn_view provides a web-based view of a Subversion repository
 Name:		apache-%{mod_name}
 Version:	0.1.0
-Release:	%mkrel 1.%{snap}.6
+Release:	%mkrel 1.%{snap}.5
 Group:		System/Servers
 License:	GPL
 URL:		http://www.outoforder.cc/projects/apache/mod_svn_view/
@@ -132,4 +132,75 @@ fi
 /var/www/html/addon-modules/*
 /var/www/mod_svn_view/themes/blueview
 
+
+
+
+%changelog
+* Tue May 24 2011 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r148.5mdv2011.0
++ Revision: 678425
+- mass rebuild
+
+* Thu Dec 02 2010 Paulo Andrade <pcpa@mandriva.com.br> 0.1.0-1.r148.4mdv2011.0
++ Revision: 605253
+- Rebuild with apr with workaround to issue with gcc type based
+
+* Sun Oct 24 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r148.3mdv2011.0
++ Revision: 588071
+- rebuild
+
+* Mon Mar 08 2010 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r148.2mdv2010.1
++ Revision: 516187
+- rebuilt for apache-2.2.15
+
+* Sun Aug 02 2009 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r148.1mdv2010.0
++ Revision: 407514
+- fix build
+- new snap (r148)
+- fix build
+- rebuild
+
+* Tue Jan 06 2009 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r147.8mdv2009.1
++ Revision: 326266
+- rebuild
+
+* Mon Jul 14 2008 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r147.7mdv2009.0
++ Revision: 235110
+- rebuild
+
+* Thu Jun 05 2008 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r147.6mdv2009.0
++ Revision: 215650
+- fix rebuild
+- hard code %%{_localstatedir}/lib to ease backports
+
+* Thu Dec 20 2007 Olivier Blin <oblin@mandriva.com> 0.1.0-1.r147.5mdv2008.1
++ Revision: 135823
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Sat Sep 08 2007 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r147.5mdv2008.0
++ Revision: 82683
+- rebuild
+
+
+* Sat Mar 10 2007 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r147.4mdv2007.1
++ Revision: 140761
+- rebuild
+
+* Thu Nov 09 2006 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r147.3mdv2007.1
++ Revision: 79523
+- Import apache-mod_svn_view
+
+* Mon Aug 07 2006 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-1.r147.3mdv2007.0
+- rebuild
+
+* Tue Apr 18 2006 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-0.r147.3mdk
+- make it backportable
+
+* Thu Apr 06 2006 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-0.r147.2mdk
+- make it backportable
+
+* Thu Apr 06 2006 Oden Eriksson <oeriksson@mandriva.com> 0.1.0-0.r147.1mdk
+- initial Mandriva package
 
