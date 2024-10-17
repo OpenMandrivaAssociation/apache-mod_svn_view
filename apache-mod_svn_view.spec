@@ -11,7 +11,7 @@ Version:	0.1.0
 Release:	%mkrel 1.%{snap}.5
 Group:		System/Servers
 License:	GPL
-URL:		http://www.outoforder.cc/projects/apache/mod_svn_view/
+URL:		https://www.outoforder.cc/projects/apache/mod_svn_view/
 Source0:	%{mod_name}-%{version}-%{snap}.tar.bz2
 Source1:	%{mod_conf}.bz2
 Patch0:		mod_svn_view-svn16x_fix.diff
