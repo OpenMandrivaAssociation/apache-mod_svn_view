@@ -22,6 +22,8 @@ Requires(pre):	apache >= 2.0.54
 Requires:	apache-conf >= 2.0.54
 Requires:	apache >= 2.0.54
 Requires:	apache-mod_transform
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:  apache-devel >= 2.0.54
 BuildRequires:	autoconf2.5
 BuildRequires:	automake1.8
